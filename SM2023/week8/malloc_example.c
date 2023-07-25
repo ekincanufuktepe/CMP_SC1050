@@ -15,7 +15,7 @@ int main() {
     int* p;
     p = NULL;
     printf("address of p: %p\n", p);
-    p = malloc(sizeof(int)); // dynamically allocate a space on the heap memory, and set address
+    p = malloc(sizeof(int)); // dynamically allocate a space of "int" on the heap memory, and set address to the pointer
     printf("address of p: %p\n", p);
     *p = 5;
     printf("value: %d\n", *p);
