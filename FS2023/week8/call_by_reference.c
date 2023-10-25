@@ -1,9 +1,8 @@
 #include<stdio.h>
 
-int increment(int*);
+void increment(int*);
 
 int main() {
-
     int x = 0;
     printf("Before, x: %d\n", x);
     increment(&x);
@@ -11,8 +10,7 @@ int main() {
     return 0;
 }
 
-int increment(int* x) {
+void increment(int* x) {
     *x = *x + 1;
     printf("this is func. increment, x: %d\n", *x);
-    return *x;
 }
