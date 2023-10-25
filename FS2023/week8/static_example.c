@@ -6,6 +6,7 @@ int main() {
     
     printf("Increment: %d\n", increment());
     printf("Increment: %d\n", increment());
+    //y++; // will get an undeclared error
     return 0;
 }
 
