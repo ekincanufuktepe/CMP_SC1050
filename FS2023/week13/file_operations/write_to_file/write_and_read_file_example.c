@@ -30,6 +30,7 @@ int main() {
     fclose(fPtr); // close file when done, otherwise you will have memory leaks
 
     // open file for reading "./" corresponds to current directory
+    // this reads from a different file in another directory
     fPtr = fopen("./files/diary.txt", "r");
     // error check
     if(fPtr == NULL) {
