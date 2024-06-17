@@ -12,9 +12,28 @@ int main() {
     scanf("%d", &grade);
 
     // sentinal control loop
-    while(grade >= 0) { // while(grade != -1) {
+
+    // Example #1
+    /*
+    while(grade >= 0) { 
         total = total + grade;        
         counter = counter + 1;
+        printf("Enter grade: ");
+        scanf("%d", &grade);
+    }
+    */
+
+    while(grade != -1) {
+        if(grade < 0) {
+            printf("Negative input, grade should be 0-100\n");
+        }
+        else if (grade > 100) {
+            printf("Grade above 100, grade should be 0-100\n");
+        }
+        else { // safe space (valid input)
+            total = total + grade;        
+            counter = counter + 1;
+        }
         printf("Enter grade: ");
         scanf("%d", &grade);
     }
@@ -25,8 +44,11 @@ int main() {
     if(counter == 0) {
         printf("There are no student grades\n");
     }
-    else {
-        printf("Average: %f\n", average);
+    else { // 90 91 91 --> AVG: 90.67
+        printf("Average (f): %f\n", average);
+        printf("Average (2f): %.2f\n", average);
+        printf("Average (1f): %.1f\n", average);
+        printf("Curved average: %.0f\n", (average));
     }
     
 
