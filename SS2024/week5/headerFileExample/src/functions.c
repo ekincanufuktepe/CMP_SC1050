@@ -1,4 +1,4 @@
-#include "../header/functions.h"
+#include "header/functions.h"
 
 int factorial(int n) {
     int result = 1;

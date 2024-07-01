@@ -1,4 +1,6 @@
-#include "../header/functions.h"
+#include "header/functions.h"
+
+// Compile it as: gcc main.c functions.c
 
 int main() {
     printf("Result: %d\n", factorial(5));
