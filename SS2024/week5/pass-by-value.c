@@ -11,5 +11,4 @@ int main() {
 
 int func(int x) { // makes a copy of the passed value
     ++x;
-    return x; // returns the copy of the passed value. Does not modify the original passed variable
 }
