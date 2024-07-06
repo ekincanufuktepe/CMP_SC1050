@@ -1,13 +1,14 @@
 #include<stdio.h>
-void func();
+int func();
 
 int main() {
-    func();
-    func();
-    func();
+    printf("Returned value: %d\n", func());
+    printf("Returned value: %d\n", func());
+    printf("Returned value: %d\n", func());
     return 0;
 }
 
-void func() {
+int func() {
     static int x = 0; // static variables are similar global variables
+    return x++; // careful this is a post-incerement, it returns the x value then it increments
 }
