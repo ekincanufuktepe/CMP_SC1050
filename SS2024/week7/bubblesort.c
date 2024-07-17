@@ -22,7 +22,6 @@ void printArray(int array[], int size) {
 }
 
 void bubblesort(int array[], int size) {
-    // 10 x 10 iterations
     for(int i=0; i<size; i++) {
         for(int j=i+1; j<size; j++) {
             if(array[i] > array[j]) {
