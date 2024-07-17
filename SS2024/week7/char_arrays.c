@@ -9,10 +9,6 @@ int main() {
 
     char null_char = '\0';
 
-    if('\a') {
-        printf("inside if-statement\n");
-    }
-
     printf("int value of null char: %d\n", null_char);
 
     printf("your name is: %s\n", alt_name);
