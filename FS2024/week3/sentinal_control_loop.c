@@ -14,9 +14,16 @@ int main() {
     int headcount = 0;
 
     // Sentinel controlled loop example using while statement.
-    while(flag == 1) {
+    while(flag) {
         printf("Enter grade: ");
         scanf("%d", &grade);
+
+        while(grade < 0) {
+            printf("Invalid grade!\n");
+            printf("Enter grade: ");
+            scanf("%d", &grade);
+        }
+
         total = total + grade;
         headcount = headcount + 1;
         printf("Enter (0) to terminate, (1) to continue: ");
