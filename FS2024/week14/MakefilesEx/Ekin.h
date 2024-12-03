@@ -1,0 +1,2 @@
+void EkinCoolFunction();
+void EkinCoolerFunction();
