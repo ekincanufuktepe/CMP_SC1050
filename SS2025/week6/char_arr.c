@@ -5,7 +5,7 @@ int main() {
 
     // char s1[] = "hell1";
     // char s2[] = {'h', 'e', 'l', 'l', '2', '\0'};
-    char dummy = '\0';
+    char dummy = '\0'; // char dummy = 0;
     printf("whitespace int value: %d\n", dummy);
     char s3[] = {'h', 'e', 'l', 'l', 'o', 0, 'w', 'o','r', 'l', 'd'}; // bad practice
 
