@@ -11,7 +11,7 @@ int main() {
     }
     double_values(x, 5);
 
-     printf("after calling double_values() function\n");
+    printf("after calling double_values() function\n");
     for(int i=0; i<5; i++) {
         printf("%d ", x[i]);
     }
