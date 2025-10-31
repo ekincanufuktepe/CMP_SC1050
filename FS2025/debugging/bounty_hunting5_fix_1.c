@@ -11,7 +11,7 @@ void print_matrix(int rows, int cols, int a[rows][cols]) {
 int main(void) {
     int m[2][3] = {{1,2,3}, {4,5,6}};
     
-    // ❌ Bug: swapped rows and cols
+    // Bug: swapped rows and cols
     print_matrix(2, 3, m);
 
     return 0;
